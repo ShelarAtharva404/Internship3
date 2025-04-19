@@ -1,0 +1,73 @@
+/* Import Tailwind's base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional custom styles can go below, or you can overwrite default Tailwind classes */
+
+/* Custom styles for better visual appeal */
+body {
+  @apply bg-black text-white;
+  font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3 {
+  @apply text-white font-semibold;
+}
+
+/* Styling for form elements */
+input,
+button {
+  @apply focus:outline-none;
+}
+
+button {
+  @apply text-white bg-amber-400 rounded-md hover:bg-amber-500 p-4 text-lg font-semibold shadow-md;
+}
+
+input {
+  @apply bg-gray-800 border border-gray-600 h-12 rounded-md p-4 text-white text-lg focus:ring-2 focus:ring-amber-400 transition duration-200;
+}
+
+/* Error message styling */
+.error-message {
+  @apply text-red-600 font-medium mt-2;
+}
+
+/* Card styles */
+.card-container {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6;
+}
+
+.card-image {
+  @apply w-full sm:w-1/2 rounded-md shadow-md;
+}
+
+.card-content {
+  @apply flex flex-col justify-center items-start space-y-4;
+}
+
+.card-content p {
+  @apply text-lg text-gray-300;
+}
+
+.card-title {
+  @apply text-2xl font-semibold text-white;
+}
+
+.card-subtitle {
+  @apply text-sm text-gray-400;
+}
+
+/* Custom space for each section (Plot, Cast, etc.) */
+.card-section {
+  @apply space-y-2;
+}
+
+.card-section h3 {
+  @apply text-white font-semibold;
+}
+
+.card-section p {
+  @apply text-gray-300;
+}
